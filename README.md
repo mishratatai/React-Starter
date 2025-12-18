@@ -1,16 +1,18 @@
-# React + Vite
+React Starter Kit v0.0.1
+This is a high-performance React starter kit built with Vite and SWC for near-instant development speeds. It is designed as a "one-click" foundation for production-ready dashboards and SaaS applications.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Key Features
+SWC Integration: Uses @vitejs/plugin-react-swc for Rust-powered Fast Refresh (up to 20x faster than Babel).
 
-Currently, two official plugins are available:
+Path Aliasing: Preconfigured @/ alias for clean imports (e.g., import { Button } from '@/components').
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Theme Support: Prebuilt dashboard layout with native Dark/Light mode toggling.
 
-## React Compiler
+Auth Ready: Ready-to-use templates for Login, Register, and OTP verification.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Optimized Routing: Automatic code splitting and lazy loading via React Router.
 
-## Expanding the ESLint configuration
+🛠️ Performance Architecture
+We chose SWC (Speedy Web Compiler) over Babel to prioritize developer velocity.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Note on React Compiler: The experimental React Compiler currently requires Babel. This kit stays with SWC for maximum HMR speed and will transition to the Rust-based compiler once it reaches stable SWC compatibility.
