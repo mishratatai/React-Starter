@@ -26,19 +26,19 @@ export default function CardDemo() {
 
      const features = [
           {
-               desc: "React with Vite & SWC as the JavaScript compiler for faster builds — built with a JSX-first approach.",
-          },
-          {
-               desc: "Prebuilt dashboard layout with both dark and light theme support.",
+               desc: "Prebuilt dashboard layout with Dark/Light theme support.",
           },
           {
                desc: "Prebuilt authentication templates (Register, Login, Forgot Password, OTP Verification).",
           },
           {
-               desc: "Preconfigured lazy loading for routes using React Router.",
+               desc: "Preconfigured lazy-loaded routes using React Router.",
           },
           {
-               desc: "Open-sourced software licensed under the MIT License.",
+               desc: "Preconfigured react router, axios, tailwindcss v4, shadcn ui, lucide icons.",
+          },
+          {
+               desc: "Open-source and MIT licensed.",
           },
      ];
 
@@ -55,8 +55,14 @@ export default function CardDemo() {
                               (ORM App). Most of the technologies used are
                               open-source, and more features will be added soon
                               — stay tuned!*/}
-                              Version 0.0.1 coming soon — One-click setup to
-                              save weeks of work!
+                              Version 0.0.1 is now Out for public review —
+                              One-click setup to save weeks of work!
+                              <br />
+                              <br />
+                              A high-performance React starter kit built with
+                              Vite and SWC for faster builds using a JSX-first
+                              approach. Perfect for dashboards and SaaS apps, it
+                              comes with:
                               <br />
                               <br />
                               <ul className="pl-[15px]">
@@ -80,7 +86,9 @@ export default function CardDemo() {
 
                          <CardAction>
                               <Link
-                                   to={"https://github.com/mishratatai"}
+                                   to={
+                                        "https://github.com/mishratatai/React-Starter"
+                                   }
                                    target="_blank"
                               >
                                    <Button variant="link">
@@ -268,8 +276,8 @@ export default function CardDemo() {
                     <CardFooter className="flex-col gap-2">
                          <InputGroup>
                               <InputGroupInput
-                                   placeholder="https://github.com/mishratatai"
-                                   value="https://github.com/mishratatai"
+                                   placeholder="https://github.com/mishratatai/React-Starter"
+                                   value="https://github.com/mishratatai/React-Starter"
                                    readOnly
                               />
                               <InputGroupAddon align="inline-end">
@@ -279,7 +287,7 @@ export default function CardDemo() {
                                         size="icon-xs"
                                         onClick={() => {
                                              copyToClipboard(
-                                                  "https://github.com/mishratatai/",
+                                                  "https://github.com/mishratatai/React-Starter",
                                              );
                                         }}
                                    >
