@@ -1,5 +1,5 @@
 import AppLayout from "@/components/app-layout";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import ThemeSwitch from "@/components/theme-switch";
 
 const breadcrumbs = [{ title: "Settings", href: "/settings" }];
 
@@ -7,17 +7,14 @@ export default function Page() {
      return (
           <>
                <AppLayout breadcrumbs={breadcrumbs}>
-                    <div className="flex w-full max-w-sm flex-col gap-6">
-                         <Tabs defaultValue="account">
-                              <TabsList>
-                                   <TabsTrigger value="account">
-                                        Light theme
-                                   </TabsTrigger>
-                                   <TabsTrigger value="password">
-                                        Dark theme
-                                   </TabsTrigger>
-                              </TabsList>
-                         </Tabs>
+                    <div className="grid grid-cols-3 gap-3">
+                         <div className="col-span-3">
+                              <div className="grid grid-cols-1 gap-3">
+                                   <h3>Change your current theme</h3>
+                                   <ThemeSwitch />
+                              </div>
+                         </div>
+                         <div className="col-span-3"></div>
                     </div>
                </AppLayout>
           </>
