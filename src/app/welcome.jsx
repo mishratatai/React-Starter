@@ -95,12 +95,23 @@ export default function CardDemo() {
                                         Github <SquareArrowOutUpRight />
                                    </Button>
                               </Link>
-                              <Button variant="link">
-                                   Documentation <SquareArrowOutUpRight />
-                              </Button>
-                              <Button variant="link">
-                                   2025 Highlights <SquareArrowOutUpRight />
-                              </Button>
+                              <Link
+                                   to={"https://www.ormrooms.com/react-starter"}
+                                   target="_blank"
+                              >
+                                   <Button variant="link">
+                                        Documentation <SquareArrowOutUpRight />
+                                   </Button>
+                              </Link>
+                              <Link
+                                   to={"https://www.ormrooms.com"}
+                                   target="_blank"
+                              >
+                                   <Button variant="link">
+                                        2025 Highlights{" "}
+                                        <SquareArrowOutUpRight />
+                                   </Button>
+                              </Link>
                          </CardAction>
                     </CardHeader>
                     <CardContent>
