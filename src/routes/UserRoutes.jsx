@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from "react";
+import PageLoader from "@/components/ui/page-loader";
 import ProtectedRoute from "@/middleware/protected-route";
 
 const Dashboard = lazy(() => import("@/app/user/dashboard/page"));
@@ -6,7 +7,7 @@ const Settings = lazy(() => import("@/app/user/settings/page"));
 
 const handleSuspense = (SuspenseComponent) => {
      return (
-          <Suspense fallback={<h2>Loading...</h2>}>
+          <Suspense fallback={<PageLoader />}>
                <SuspenseComponent />
           </Suspense>
      );

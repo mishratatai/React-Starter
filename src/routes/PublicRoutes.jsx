@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from "react";
+import PageLoader from "@/components/ui/page-loader";
 
 const Welcome = lazy(() => import("@/app/welcome"));
 const Register = lazy(() => import("@/app/auth/register"));
@@ -8,7 +9,7 @@ const OtpVerification = lazy(() => import("@/app/auth/otp-verification"));
 
 const handleSuspense = (SuspenseComponent) => {
      return (
-          <Suspense fallback={<h2>Loading...</h2>}>
+          <Suspense fallback={<PageLoader />}>
                <SuspenseComponent />
           </Suspense>
      );
