@@ -22,6 +22,17 @@ This is a high-performance React starter kit built with Vite and SWC for near-in
 * Start the development server: `npm run dev`
 * After the server starts, visit this URL in your browser: `http://localhost:5173`
 
+## Tech Stack
+
+The ORM React Starter Kit is built with a modern, high-performance frontend stack:
+
+* **React 19** with **Vite & SWC**
+* **React Router v7** – Modern, optimized client-side routing
+* **Axios** – Promise-based HTTP client for API communication
+* **Tailwind CSS v4** – Utility-first CSS framework
+* **shadcn/ui** – Default React UI component library
+* **Lucide React** – Clean and consistent icon set
+
 ## ORMRooms Sponsors
 
 We're grateful for the support of our sponsors. Currently, we have no sponsors. If your organization would like to support ORMRooms, please contact us [info@ormrooms.com](mailto:info@ormrooms.com).
